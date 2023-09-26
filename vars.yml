@@ -4,3 +4,8 @@
     - name: Printing messages
       ansible.builtin.debug:
         msg: "Printing messages"
+
+    - name: Variables
+      ansible.builtin.debug:
+        msg: "{{name}}"
+        name: Snehith
