@@ -1,5 +1,7 @@
 - name: Variables
   hosts: localhost
+  vars:
+    name: Bhavana.com
   tasks:
     - name: Printing messages
       ansible.builtin.debug:
@@ -10,3 +12,7 @@
         msg: "{{ name }}"
       vars:
         name: Snehith.com
+
+    - name: Variable task level
+      ansible.builtin.debug:
+        msg: "{{ name }}"
