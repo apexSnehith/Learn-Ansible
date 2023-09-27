@@ -4,9 +4,9 @@
     - name: Print Lion name
       ansible.builtin.debug:
         msg: Animal name is Lion
-      when: Animal = "Lion"
+      when: Animal == "Lion"
 
     - name: Print Tiger name
       ansible.builtin.debug:
         msg: Animal name is Tiger
-      when: Animal = "Tiger"
+      when: Animal == "Tiger"
